@@ -15,7 +15,7 @@ def validate_non_empty_str(text):
 
 set_rtl(st)
 source_dir = dirname(abspath(__file__))
-set_background(st, os.path.join(source_dir, 'resources', 'background.jpeg'))
+set_background(st, os.path.join(source_dir, 'resources', 'background.png'))
 st.session_state.setdefault('show_input', True)
 st.session_state.setdefault('arriving', None)
 
