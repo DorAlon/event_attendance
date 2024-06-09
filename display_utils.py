@@ -9,10 +9,13 @@ def set_rtl(st):
         unicode-bidi: bidi-override;
         text-align: right;
     }
-    p, div, input, label, h1, h2, h3, h4, h5, h6, checkbox, stCheckbox {
-        direction: RTL;
-        unicode-bidi: bidi-override;
-        text-align: right;
+    # p, div, input, label, h1, h2, h3, h4, h5, h6, checkbox, stCheckbox {
+    #     direction: RTL;
+    #     unicode-bidi: bidi-override;
+    #     # text-align: right;
+    # }
+    div[data-testid="InputInstructions"] > span:nth-child(1) {
+        visibility: hidden;
     }
     </style>
     """, unsafe_allow_html=True)
