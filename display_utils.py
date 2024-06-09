@@ -38,7 +38,7 @@ def set_background(st, png_file):
     header {visibility: hidden;}
     footer {visibility: hidden;}
     </style>
-    ''' % ('30%', bin_str)
+    ''' % ('100px', bin_str)
     st.markdown(page_bg_img, unsafe_allow_html=True)
 
 
