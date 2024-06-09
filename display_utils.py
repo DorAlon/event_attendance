@@ -9,6 +9,11 @@ def set_rtl(st):
         unicode-bidi: bidi-override;
         text-align: right;
     }
+    
+    input[type="text"], input[type="number"] {
+        border: 1px solid black;
+        padding: 8px;
+    }
     # p, div, input, label, h1, h2, h3, h4, h5, h6, checkbox, stCheckbox {
     #     direction: RTL;
     #     unicode-bidi: bidi-override;
