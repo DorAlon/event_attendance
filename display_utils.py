@@ -25,6 +25,9 @@ def set_background(st, png_file):
     bin_str = get_base64(png_file)
     page_bg_img = '''
     <style>
+    div[data-testid="stVerticalBlock"] {
+        margin-top: %s; /* Adjust this value to control the amount of space at the top */
+    }
     .stApp {
     background-image: url("data:image/png;base64,%s");
     background-size: contain;
@@ -35,7 +38,7 @@ def set_background(st, png_file):
     header {visibility: hidden;}
     footer {visibility: hidden;}
     </style>
-    ''' % bin_str
+    ''' % ('30%', bin_str)
     st.markdown(page_bg_img, unsafe_allow_html=True)
 
 
