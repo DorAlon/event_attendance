@@ -31,6 +31,9 @@ def set_background(st, png_file):
     background-repeat: no-repeat;
     background-position: center;
     }
+    #MainMenu {visibility: hidden;}
+    header {visibility: hidden;}
+    footer {visibility: hidden;}
     </style>
     ''' % bin_str
     st.markdown(page_bg_img, unsafe_allow_html=True)
